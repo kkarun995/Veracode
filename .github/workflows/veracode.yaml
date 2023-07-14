@@ -28,7 +28,7 @@ jobs:
           vkey: ${{ secrets.VKEY }}
           command: "scan" 
           type: "directory"
-          source: "app"
+          source: "app:latest"
           format: "json"
           debug: false
           fail_build: true
