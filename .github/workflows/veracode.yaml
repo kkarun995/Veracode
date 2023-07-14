@@ -17,7 +17,10 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: false
-          tags: app:latest 
+          tags: app:latest
+      - name: docker ls
+        run: |
+          docker images 
       - name: Verracode Container/IaC/Secrets action step
         uses: veracode/container_iac_secrets_scanning@v1.0.0
         with:
